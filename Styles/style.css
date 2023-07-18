@@ -152,6 +152,59 @@ button img{
 }
 /* Banner Section Code end from here */
 
+/* We are gamer section code start from here */
+
+.gamer-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -80px;
+}
+.gamer-photo img{
+    width: 608px;
+    height: 489px;
+    flex-shrink: 0;
+}
+.gamer-title{
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gamer-description{
+    width: 500px;
+    color: #534C64;
+    text-align: right;
+    font-size: 18px;
+    padding-top: 20px;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+}
+.gamer-btn{
+    margin-left: 290px;
+}
+small{
+    width: 520px;
+    color: #534C64;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 45px; /* 187.5% */
+}
+.unless{
+    color: #534C64;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 45px;
+}
+/* We are gamer section code end from here */
+
+
+
+
 
 
 
@@ -180,8 +233,6 @@ button img{
     }
     .banner-section{
         flex-direction: column;
-        /* -webkit-flex-direction: column-reverse;
-        flex-direction: column-reverse; */
     }
     .banner-content{
         width: 100%;
@@ -214,5 +265,32 @@ button img{
     }
     #icon-3{
         margin-left: -180px;
+    }
+    .gamer-section{
+        flex-direction: column;
+    }
+    .gamer-photo img{
+        /* position: absolute; */
+       margin-top: 500px;
+        width: 100%;
+    }
+    .gamer-title{
+        text-align: center;
+    }
+    .gamer-description{
+       width: 100%;
+       text-align: center;
+    }
+    small{
+        width: 100%;
+        margin-left: 100px;
+    }
+
+    .gamer-btn{
+       margin-left: 100px;
+    }
+    .unless{
+        width: 100%;
+        margin-left: 20px;
     }
 }
