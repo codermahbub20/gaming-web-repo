@@ -365,7 +365,43 @@ small{
     width: 500px;
 }
 
-
+.all-games{
+    height: 400px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-top: 50px;
+   padding-left: 60px;
+}
+.game-btn button{
+    width: 243px;
+    height: 80px;
+    border: none;
+    border-radius: 50px;
+    display: grid;
+    align-items: center;
+    padding: 20px;
+    background: #FFF;
+    cursor: pointer;
+}
+.game-btn button p:hover{
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.game-btn button:hover{
+    border: 1px solid #FF42A5  ;
+}
+.game-btn button img{
+   /* margin-top: 20px; */
+   height: 40px;
+   width: 40px;
+}
+.game-btn button p{
+    margin-top: -30px;
+    margin-left: 25px;
+}
 
 
 /* Footer section code start from here */
@@ -578,6 +614,21 @@ footer{
     .carrer-photo img{
         width: 400px;
         margin-left: 20px;
+    }
+    .all-games{
+        grid-template-columns: repeat(3,1fr);
+        padding-left: 10px;
+        width: 100%;
+    }
+    .game-btn button{
+        width: 153px;
+         height: 60px;
+         padding: 5px;
+         margin-left: -15px;
+    }
+    .game-btn button p{
+        margin-top: -45px;
+        margin-left: 25px;
     }
 
 
