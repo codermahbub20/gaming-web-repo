@@ -259,7 +259,7 @@ small{
 
 .our-games{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     /* gap: 100px; */
     height: 100vh;
@@ -306,6 +306,64 @@ small{
 
 /* Our Downloads game section end from here */
 
+.carrer-section{
+    margin-top: 10px;
+    display: flex;
+    height: 90vh;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+}
+.carrer-photo{
+    background-image: url(../images/Group\ 14.png);
+    width: 50%;
+}
+.carrer-content{
+    width: 50%;
+
+}
+.carrer-title{
+    color: #FFF;
+    font-size: 48px;
+    padding-top: 120px;
+    padding-left: 200px;
+    font-weight: 700;
+    line-height: 60px; /* 125% */
+}
+.carrer-description{
+    color: #FFF;
+    width: 700px;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 200px;
+    line-height: 30px; /* 166.667% */
+    padding-top: 20px;
+}
+
+.carrer-sub-content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    color: white;
+    font-size: 18px;
+    gap: 20px;
+    font-weight: 600px;
+}
+.carrer-btn{
+    display: inline-flex;
+    padding: 21px 40px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 48px;
+    background: #FFF;
+    border: none;
+    margin-top: 20px;
+}
+.sub-content-box-1{
+    padding-left: 200px;
+}
+
+.carrer-photo{
+    width: 500px;
+}
 
 
 
@@ -335,10 +393,7 @@ footer{
     grid-template-columns: repeat(6,1fr);
 }
 
-.our-games{
-    flex-direction: column;
-    margin-top: 250px;
-}
+
 /* .list-item ul li{
     display: inline;
     padding-left: 30px;
@@ -479,6 +534,10 @@ footer{
         width: 100%;
         margin-left: 20px;
     }
+    .our-games{
+        flex-direction: column;
+        margin-top: 250px;
+    }
     .online-game-item{
         grid-template-columns: 1fr;
         padding-left: 80px;
@@ -493,8 +552,33 @@ footer{
         height: 200px;
         margin-left: 20px;
     }
-
-
+    .carrer-section{
+        flex-direction: column;
+        margin-top: 300px;
+        width: 100%;
+        height: 1000px;
+    }
+    .carrer-title{
+        padding-left: 130px;
+        padding-top: 20px;
+    }
+    .carrer-description{
+        padding-left: 5px;
+        text-align: justify;
+        width: 100%;
+        padding: 20px;
+    }
+    .sub-content-box-1{
+        padding-left: 10px;
+    }
+    .carrer-photo{
+       
+        width: 100%;
+    }
+    .carrer-photo img{
+        width: 400px;
+        margin-left: 20px;
+    }
 
 
     .foot-logo{
