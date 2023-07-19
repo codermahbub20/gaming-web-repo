@@ -251,8 +251,58 @@ small{
     line-height: 30px; /* 150% */
 
 }
-.box img:hover{
-    opacity: 0.3;
+.overlay{
+    position: absolute;
+    top: 1670px;
+    left: -10px;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background: black;
+    cursor: pointer;
+}
+.overlay-content img{
+    height: 120px;
+    width: 120px;
+}
+.overlay-content{
+    position: absolute;
+    top: 100%;
+    left: 22%;
+    transform: translate(-50%,-50%);
+    color: #F948B2;
+    text-align: center;
+}
+.box:hover .overlay{
+    opacity: 0.8;
+}
+
+.overlay-2{
+    position: absolute;
+    top: 1670px;
+    left: 360px;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background: black;
+    cursor: pointer;
+}
+.overlay-content-2 img{
+    height: 120px;
+    width: 120px;
+}
+.overlay-content-2{
+    position: absolute;
+    top: 100%;
+    left: 22%;
+    transform: translate(-50%,-50%);
+    color: #F948B2;
+    text-align: center;
+}
+.box:hover .overlay-2{
+    opacity: 0.8;
 }
 /* Our Online games section code end from here */
 
@@ -310,7 +360,7 @@ small{
 .carrer-section{
     margin-top: 10px;
     display: flex;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
 }
@@ -676,6 +726,45 @@ footer{
     margin-top: 700px;
     text-align: center;
    }
+
+   /* Overlay code for mobile version */
+
+   .overlay{
+    position: absolute;
+    top: 3200px;
+    left: 150px;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background: black;
+    cursor: pointer;
+}
+
+   .overlay-2{
+    position: absolute;
+    top: 2780px;
+    left: 150px;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background: black;
+    cursor: pointer;
+}
+
+.overlay-3{
+    position: relative;
+    top: 2780px;
+    top: -100px;
+    left: 550px;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background: black;
+    cursor: pointer;
+}
 
 }
 
