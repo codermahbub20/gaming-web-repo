@@ -255,6 +255,56 @@ small{
 }
 /* Our Online games section code end from here */
 
+/* Our Downloads game section start from here */
+
+.our-games{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 100px; */
+    height: 100vh;
+    padding-top: 50px;
+}
+.download-title{
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    line-height: 60px; /* 125% */
+}
+.download-span{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.download-description{
+    color: #534C64;
+    text-align: right;
+    width: 350px;
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 30px;
+    line-height: 30px; /* 166.667% */
+}
+.download-main-photo{
+    width: 500px;
+    height: 500px;
+    border-radius: 10px ;
+    margin-left: 300px;
+}
+.sub-download-photo img{
+    width: 318.5px;
+    height: 365.083px;
+    border-radius: 8px;
+    border: 10px solid #FFF;
+    background: url(<path-to-image>), lightgray 0px -0.304px / 100% 117.229% no-repeat;
+    margin-top: -200px;
+    margin-left: 150px;
+
+}
+
+/* Our Downloads game section end from here */
 
 
 
@@ -280,14 +330,25 @@ footer{
    margin-top: 230px;
     position: absolute;
 }
-.list-item ul li{
-    display: inline;
-    padding-left: 30px;
+.list-item ul{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
 }
 
-.foot-icon{
+.our-games{
+    flex-direction: column;
+    margin-top: 250px;
+}
+/* .list-item ul li{
+    display: inline;
+    padding-left: 30px;
+} */
+
+.foot-icon ul{
     position: absolute;
     margin-top: 270px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
     margin-left: 500px;
     background: none;
 
@@ -309,8 +370,9 @@ footer{
 .list-item-2 ul{
     position: absolute;
     margin-top: 340px;
-    display: inline;
-    margin-left: 400px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 320px;
     color: white;
 }
 .list-item-2 ul li{
@@ -323,7 +385,7 @@ footer{
 .copy{
     position: absolute;
     margin-top: 400px;
-    margin-left: 600px;
+    margin-left: 540px;
     color: rgba(255, 255, 255, 0.60);
     font-size: 16px;
     font-weight: 500;
@@ -385,7 +447,7 @@ footer{
         /* text-align: center; */
     }
     .primary-btn{
-        margin-left: 10px;
+        margin-left: 20px;
     }
     #icon-3{
         margin-left: -180px;
@@ -421,4 +483,27 @@ footer{
         grid-template-columns: 1fr;
         padding-left: 80px;
     }
+    .download-main-photo{
+        width: 80%;
+        margin-left: 90px;
+        margin-top: 20px;
+    }
+    .sub-download-photo img{
+        width: 200px;
+        height: 200px;
+        margin-left: 20px;
+    }
+
+
+
+
+    .foot-logo{
+        margin-left: 90px;
+    }
+   /* .list-item ul li{
+    margin-left: -100px;
+   } */
+
+  
+    
 }
