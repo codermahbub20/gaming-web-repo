@@ -238,6 +238,14 @@ small{
     gap: 30px;
     margin-top: 30px;
 }
+.box{
+    height: 350px;
+    width: 270px;
+    /* background-color: red; */
+    /* background-image: url(../images/Rectangle\ 4.png); */
+    border-radius: 10px;
+    cursor: pointer;
+}
 .box img{
 
     width: 270px;
@@ -251,70 +259,20 @@ small{
     line-height: 30px; /* 150% */
 
 }
-.overlay{
-    position: absolute;
-    top: 1670px;
-    left: -10px;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-    background: black;
-    cursor: pointer;
-}
-.overlay-content img{
-    height: 120px;
-    width: 120px;
-}
-.overlay-content{
-    position: absolute;
-    top: 100%;
-    left: 22%;
-    transform: translate(-50%,-50%);
-    color: #F948B2;
-    text-align: center;
-}
-.box:hover .overlay{
-    opacity: 0.8;
-}
 
-.overlay-2{
-    position: absolute;
-    top: 1670px;
-    left: 360px;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-    background: black;
-    cursor: pointer;
-}
-.overlay-content-2 img{
-    height: 120px;
-    width: 120px;
-}
-.overlay-content-2{
-    position: absolute;
-    top: 100%;
-    left: 22%;
-    transform: translate(-50%,-50%);
-    color: #F948B2;
-    text-align: center;
-}
-.box:hover .overlay-2{
-    opacity: 0.8;
-}
 /* Our Online games section code end from here */
 
 /* Our Downloads game section start from here */
 
 .our-games{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    /* grid-template-columns: repeat(2,1fr); */
     align-items: center;
     /* gap: 100px; */
+    width: 100%;
     height: 100vh;
-    padding-top: 50px;
+    padding-top: 150px;
 }
 .download-title{
     text-align: right;
@@ -358,8 +316,9 @@ small{
 /* Our Downloads game section end from here */
 
 .carrer-section{
-    margin-top: 10px;
-    display: flex;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     height: 100vh;
     width: 100%;
     background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
@@ -464,6 +423,7 @@ footer{
     height: 500px;
     background: #0B0223;
     display: block;
+    text-align: center;
     position: relative;
 }
 .foot-logo{
@@ -643,7 +603,7 @@ footer{
         margin-left: 20px;
     }
     .carrer-section{
-        flex-direction: column;
+        grid-template-columns: 1fr;
         margin-top: 300px;
         width: 100%;
         height: 1200px;
@@ -729,55 +689,18 @@ footer{
 
    /* Overlay code for mobile version */
 
-   .overlay{
-    position: absolute;
-    top: 3200px;
-    left: 150px;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-    background: black;
-    cursor: pointer;
-}
-
-   .overlay-2{
-    position: absolute;
-    top: 2770px;
-    left: 150px;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-    background: black;
-    cursor: pointer;
-}
-
-.overlay-3{
-    position: relative;
-    top: 2780px;
-    top: -90px;
-    left: 550px;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-    background: black;
-    cursor: pointer;
-}
-
 }
 
 
 
 @media screen and ((min-width: 576px)and (max-width: 768px)) {
     body{
-        width: 100%;
+        width: 900px;
         /* background-color: rebeccapurple; */
         overflow-x: hidden;
     }
     header{
-        width: 885px;
+        width: 900px;
     }
     nav{
         /* flex-direction: column; */
@@ -820,13 +743,16 @@ footer{
     .our-games{
         flex-direction: column;
         margin-top: 300px;
-        width: 885px;
+        width: 975px;
     }
     .carrer-section{
         margin-top: 350px;
-        flex-direction: column;
+        grid-template-columns: 1fr;
         height: 1300px;
-        width: 885px;
+        width: 100%;
+    }
+    .carrer-content{
+        width: 100%;
     }
 
     .sub-content-box-1{
@@ -834,13 +760,14 @@ footer{
     }
     .all-games{
         margin-top: 100px;
+        width: 975px;
         grid-template-columns: repeat(3,1fr);
     }
     footer{
-        width: 885px;
+        width: 975px;
     }
     .foot-logo{
-        margin-left: 250px;
+        margin-left: 360px;
         margin-top: 100px;
         text-align: center;
     }
@@ -871,23 +798,14 @@ footer{
      }
 
      .foot-icon ul{
-        margin-left: 250px;
+        margin-left: 350px;
         grid-template-columns: repeat(3,1fr);
         /* margin-top: 400px; */
+        text-align: center;
        }
        .foot-icon ul img{
         margin-top: 10px;
        }
 
-.overlay-2{
-    position: absolute;
-    top: 2870px;
-    left: 180px;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-    background: red;
-    cursor: pointer;
-}
+
 }
